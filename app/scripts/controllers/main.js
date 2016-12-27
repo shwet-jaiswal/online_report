@@ -1,3 +1,4 @@
+
 'use strict';
 
 /**
@@ -9,9 +10,5 @@
  */
 angular.module('onlineReportApp')
   .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+
   });

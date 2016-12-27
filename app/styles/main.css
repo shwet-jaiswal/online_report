@@ -1,45 +1,35 @@
-//$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-// bower:scss
-// endbower
-
-html,body {
+html, body {
   max-width: 100%;
   max-height: 100%;
   padding: 0px;
-  margin: 0px;
-}
+  margin: 0px; }
 
 .container {
-  margin-top: -2%;
-}
+  margin-top: -2%; }
 
 div#onlrep-app {
   height: 100%;
   width: 100%;
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
+
 #onlrep-header {
- width: 100%;
- height: 20%;
- background-color: #2e5f8f;
- position: relative;
-}
+  width: 100%;
+  height: 20%;
+  background-color: #2e5f8f;
+  position: relative; }
 
 #onlrep-header > h1.heading-text {
   text-align: center;
   color: #fff;
-  padding-top: 1.8%;
-}
+  padding-top: 1.8%; }
 
 #filter-header {
   position: relative;
   width: 15%;
   height: 100%;
   background-color: #00A000;
-  display: block;
-}
-
+  display: block; }
 
 #cssmenu,
 #cssmenu ul,
@@ -54,22 +44,22 @@ div#onlrep-app {
   position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 #cssmenu {
   width: 100%;
   font-family: Raleway, sans-serif;
-  color: #ffffff;
-}
+  color: #ffffff; }
+
 #cssmenu ul ul {
-  display: none;
-}
+  display: none; }
+
 #cssmenu > ul > li.active > ul {
-  display: block;
-}
+  display: block; }
+
 .align-right {
-  float: right;
-}
+  float: right; }
+
 #cssmenu > ul > li > a {
   padding: 16px 22px;
   cursor: pointer;
@@ -80,11 +70,11 @@ div#onlrep-app {
   background: #3ab4a6;
   -webkit-transition: color .2s ease;
   -o-transition: color .2s ease;
-  transition: color .2s ease;
-}
+  transition: color .2s ease; }
+
 #cssmenu > ul > li > a:hover {
-  color: #d8f3f0;
-}
+  color: #d8f3f0; }
+
 #cssmenu ul > li.has-sub > a:after {
   position: absolute;
   right: 26px;
@@ -99,8 +89,8 @@ div#onlrep-app {
   -moz-transition: all 0.1s ease-out;
   -ms-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out;
-}
+  transition: all 0.1s ease-out; }
+
 #cssmenu ul > li.has-sub > a:before {
   position: absolute;
   right: 22px;
@@ -114,16 +104,16 @@ div#onlrep-app {
   -moz-transition: all 0.1s ease-out;
   -ms-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out;
-}
+  transition: all 0.1s ease-out; }
+
 #cssmenu ul > li.has-sub.open > a:after,
 #cssmenu ul > li.has-sub.open > a:before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
+  transform: rotate(45deg); }
+
 #cssmenu ul ul li a {
   padding: 14px 22px;
   cursor: pointer;
@@ -134,20 +124,21 @@ div#onlrep-app {
   background: #49505a;
   -webkit-transition: color .2s ease;
   -o-transition: color .2s ease;
-  transition: color .2s ease;
-}
+  transition: color .2s ease; }
+
 #cssmenu ul ul ul li a {
-  padding-left: 32px;
-}
+  padding-left: 32px; }
+
 #cssmenu ul ul li a:hover {
-  color: #ffffff;
-}
+  color: #ffffff; }
+
 #cssmenu ul ul > li.has-sub > a:after {
   top: 16px;
   right: 26px;
-  background: #dddddd;
-}
+  background: #dddddd; }
+
 #cssmenu ul ul > li.has-sub > a:before {
   top: 20px;
-  background: #dddddd;
-}
+  background: #dddddd; }
+
+/*# sourceMappingURL=main.css.map */
