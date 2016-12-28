@@ -3,5 +3,9 @@ angular
   .controller('OnlrepFilterBarCtrl', OnlrepFilterBarCtrl);
 
 function OnlrepFilterBarCtrl() {
-  this.filter1 = 'my filter';
+  var vm = this;
+  vm.displayClassValue = true;
+  vm.displayClick = function () {
+    vm.displayClassValue = false;
+  }
 }

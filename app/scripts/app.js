@@ -12,7 +12,8 @@ angular
   .module('onlineReportApp', [
     'ngRoute',
     'onlrep.header-bar',
-    'onlrep.filter-bar'
+    'onlrep.filter-bar',
+    'onlrep.chart-bar'
   ])
   .config(function ($routeProvider) {
     $routeProvider

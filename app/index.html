@@ -24,6 +24,7 @@
     <div class="container">
       <onlrep-header-bar></onlrep-header-bar>
       <onlrep-filter-bar></onlrep-filter-bar>
+      <onlrep-chart-bar></onlrep-chart-bar>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -40,6 +41,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/fusioncharts/fusioncharts.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
@@ -47,13 +49,14 @@
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script type="text/javascript" src="bower_components/fusioncharts/fusioncharts.js"></script>
+        <script type="text/javascript" src="bower_components/angular-fusioncharts/dist/angular-fusioncharts.min.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/header-bar/header-bar.js"></script>
         <script src="scripts/header-bar/src/header-bar.controller.js"></script>
@@ -61,6 +64,9 @@
         <script src="scripts/filter-bar/filter-bar.js"></script>
         <script src="scripts/filter-bar/src/filter-bar.controller.js"></script>
         <script src="scripts/filter-bar/src/filter-bar.directive.js"></script>
+        <script src="scripts/chart-bar/chart-bar.js"></script>
+        <script src="scripts/chart-bar/src/chart-bar.controller.js"></script>
+        <script src="scripts/chart-bar/src/chart-bar.directive.js"></script>
         <!-- endbuild -->
 </body>
 </html>

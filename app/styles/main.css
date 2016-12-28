@@ -16,20 +16,21 @@ div#onlrep-app {
 #onlrep-header {
   width: 100%;
   height: 20%;
-  background-color: #2e5f8f;
+  background-color: #49505a;
   position: relative; }
 
 #onlrep-header > h1.heading-text {
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   padding-top: 1.8%; }
 
 #filter-header {
-  position: relative;
-  width: 15%;
+  position: fixed;
+  width: 16%;
   height: 100%;
-  background-color: #00A000;
-  display: block; }
+  background-color: #3ab4a6;
+  display: block;
+  overflow: auto; }
 
 #cssmenu,
 #cssmenu ul,
@@ -140,5 +141,16 @@ div#onlrep-app {
 #cssmenu ul ul > li.has-sub > a:before {
   top: 20px;
   background: #dddddd; }
+
+div#chart-bar {
+  width: 100%;
+  height: inherit;
+  background-color: #ffffff;
+  display: inline-block;
+  position: fixed;
+  left: 16%; }
+
+.chart-container {
+  float: left; }
 
 /*# sourceMappingURL=main.css.map */
