@@ -34,7 +34,7 @@ function OnlrepChartBarCtrl($scope) {
 
     "caption": "Sales Comparison: 2013 versus 2014",
     "subCaption": "Harry’ s SuperMart",
-  "numberprefix": "$",
+    "numberprefix": "$",
     "plotgradientcolor": "",
     "bgcolor": "FFFFFF",
     "showalternatehgridcolor": "0",

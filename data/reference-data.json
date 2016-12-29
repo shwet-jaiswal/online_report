@@ -1,0 +1,16 @@
+{
+  "DEM0391543": {
+    "Subject": "Data Extract",
+    "In Due": "TRUE",
+    "Priority": "3 - Medium",
+    "Ticket type": "Service Request",
+    "Assigned to": "Dummy Person1",
+    "Incident state": "Closed",
+    "Short description": "sgsgss",
+    "Closure categorization": "Solved (Permanently)",
+    "State": "Closed",
+    "Category(u_category)": "Data Exports",
+    "Reason": "2h",
+    "Assignment Group": "Project1"
+  }
+}

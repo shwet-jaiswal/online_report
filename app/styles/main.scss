@@ -1,6 +1,6 @@
 //$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-
+//@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 html,body {
@@ -12,6 +12,8 @@ html,body {
 
 .container {
   margin-top: -2%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 div#onlrep-app {

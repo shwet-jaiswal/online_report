@@ -5,7 +5,9 @@ html, body {
   margin: 0px; }
 
 .container {
-  margin-top: -2%; }
+  margin-top: -2%;
+  margin-left: 0;
+  margin-right: 0; }
 
 div#onlrep-app {
   height: 100%;
