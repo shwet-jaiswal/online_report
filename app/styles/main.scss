@@ -37,11 +37,11 @@ div#onlrep-app {
 
 #filter-header {
   position: fixed;
-  width: 16%;
-  height: 100%;
+  width: 17%;
+  height: 89%;
   background-color: #3ab4a6;
   display: block;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 
@@ -75,7 +75,7 @@ div#onlrep-app {
   float: right;
 }
 #cssmenu > ul > li > a {
-  padding: 16px 22px;
+  padding: 15px 10px;
   cursor: pointer;
   z-index: 2;
   font-size: 16px;
@@ -162,7 +162,7 @@ div#chart-bar {
   background-color: #ffffff;
   display: inline-block;
   position: fixed;
-  left: 16%;
+  left: 17%;
 }
 
 .chart-container {

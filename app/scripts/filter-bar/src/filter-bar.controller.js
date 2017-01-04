@@ -2,10 +2,22 @@ angular
   .module('onlrep.filter-bar')
   .controller('OnlrepFilterBarCtrl', OnlrepFilterBarCtrl);
 
-function OnlrepFilterBarCtrl() {
+OnlrepFilterBarCtrl.$inject = ['getReferenceDataService', 'getUniqueFilterValue'];
+
+function OnlrepFilterBarCtrl(getReferenceDataService, getUniqueFilterValue) {
   var vm = this;
-  vm.displayClassValue = true;
-  vm.displayClick = function () {
-    vm.displayClassValue = false;
+  vm.dataHeaderName = getReferenceDataService.initialData;
+
+  function init() {
+    getReferenceDataService.getReferenceData()
+      .then(
+        function (initialData) {
+          vm.dataHeaderName = getUniqueFilterValue.getUniqueFilterHeaderValue(initialData);
+        }
+      );
   }
+
+  init();
 }
+
+

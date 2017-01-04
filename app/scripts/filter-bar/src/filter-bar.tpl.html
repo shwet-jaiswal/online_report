@@ -1,126 +1,20 @@
 <div id="filter-header">
+
   <div id="applied-fliter"></div>
+
   <div id="cssmenu">
     <ul>
-      <li sub-menu-filter class="active has-sub"><a href="#">Priority</a>
+      <li sub-menu-filter class="active has-sub"  ng-repeat="header in onlrepFilterBarCtrl.dataHeaderName">
+        <a href="#">{{header.headerName}}</a>
+
         <ul style="display: none;">
-          <li><a href="#">Critical</a></li>
-          <li><a href="#">High</a></li>
-          <li><a href="#">Medium</a></li>
-          <li><a href="#">Low</a></li>
-          <li><a href="#">Minor</a></li>
+          <li ng-repeat="listName in header.headerListUniqueName">
+            <a href="#">{{listName}}</a>
+          </li>
         </ul>
-      </li>
-      <li sub-menu-filter class="active has-sub"><a>Incident Status</a>
-        <ul style="display: none;">
-          <li><a href="#">Closed</a></li>
-          <li><a href="#">Solved</a></li>
-          <li><a href="#">Awaiting Customer</a></li>
-          <li><a href="#">In Process</a></li>
-          <li><a href="#">Assigned</a></li>
-          <li><a href="#">Pending</a></li>
-        </ul>
-      </li>
-      <li sub-menu-filter class="active has-sub"><a>Incident Status</a>
-        <ul style="display: none;">
-          <li><a href="#">Closed</a></li>
-          <li><a href="#">Solved</a></li>
-          <li><a href="#">Awaiting Customer</a></li>
-          <li><a href="#">In Process</a></li>
-          <li><a href="#">Assigned</a></li>
-          <li><a href="#">Pending</a></li>
-        </ul>
-      </li>
-      <li sub-menu-filter class="active has-sub"><a>Incident Status</a>
-        <ul style="display: none;">
-          <li><a href="#">Closed</a></li>
-          <li><a href="#">Solved</a></li>
-          <li><a href="#">Awaiting Customer</a></li>
-          <li><a href="#">In Process</a></li>
-          <li><a href="#">Assigned</a></li>
-          <li><a href="#">Pending</a></li>
-        </ul>
-      </li>
-      <li sub-menu-filter class="active has-sub"><a>Incident Status</a>
-        <ul style="display: none;">
-          <li><a href="#">Closed</a></li>
-          <li><a href="#">Solved</a></li>
-          <li><a href="#">Awaiting Customer</a></li>
-          <li><a href="#">In Process</a></li>
-          <li><a href="#">Assigned</a></li>
-          <li><a href="#">Pending</a></li>
-        </ul>
-      </li>
-      <li sub-menu-filter class="active has-sub"><a>Incident Status</a>
-        <ul style="display: none;">
-          <li><a href="#">Closed</a></li>
-          <li><a href="#">Solved</a></li>
-          <li><a href="#">Awaiting Customer</a></li>
-          <li><a href="#">In Process</a></li>
-          <li><a href="#">Assigned</a></li>
-          <li><a href="#">Pending</a></li>
-        </ul>
-      </li>
-      <li sub-menu-filter class="active has-sub"><a>Incident Status</a>
-        <ul style="display: none;">
-          <li><a href="#">Closed</a></li>
-          <li><a href="#">Solved</a></li>
-          <li><a href="#">Awaiting Customer</a></li>
-          <li><a href="#">In Process</a></li>
-          <li><a href="#">Assigned</a></li>
-          <li><a href="#">Pending</a></li>
-        </ul>
-      </li>
-      <li sub-menu-filter class="active has-sub"><a>Incident Status</a>
-        <ul style="display: none;">
-          <li><a href="#">Closed</a></li>
-          <li><a href="#">Solved</a></li>
-          <li><a href="#">Awaiting Customer</a></li>
-          <li><a href="#">In Process</a></li>
-          <li><a href="#">Assigned</a></li>
-          <li><a href="#">Pending</a></li>
-        </ul>
-      </li>
-      <li sub-menu-filter class="active has-sub"><a>Incident Status</a>
-        <ul style="display: none;">
-          <li><a href="#">Closed</a></li>
-          <li><a href="#">Solved</a></li>
-          <li><a href="#">Awaiting Customer</a></li>
-          <li><a href="#">In Process</a></li>
-          <li><a href="#">Assigned</a></li>
-          <li><a href="#">Pending</a></li>
-        </ul>
-      </li>
-      <li sub-menu-filter class="active has-sub"><a>Incident Status</a>
-        <ul style="display: none;">
-          <li><a href="#">Closed</a></li>
-          <li><a href="#">Solved</a></li>
-          <li><a href="#">Awaiting Customer</a></li>
-          <li><a href="#">In Process</a></li>
-          <li><a href="#">Assigned</a></li>
-          <li><a href="#">Pending</a></li>
-        </ul>
-      </li>
-      <li sub-menu-filter class="active has-sub"><a>Incident Status</a>
-        <ul style="display: none;">
-          <li><a href="#">Closed</a></li>
-          <li><a href="#">Solved</a></li>
-          <li><a href="#">Awaiting Customer</a></li>
-          <li><a href="#">In Process</a></li>
-          <li><a href="#">Assigned</a></li>
-          <li><a href="#">Pending</a></li>
-        </ul>
-      </li>
-      <li sub-menu-filter class="active has-sub"><a>Incident Status</a>
-        <ul style="display: none;">
-          <li><a href="#">Closed</a></li>
-          <li><a href="#">Solved</a></li>
-          <li><a href="#">Awaiting Customer</a></li>
-          <li><a href="#">In Process</a></li>
-          <li><a href="#">Assigned</a></li>
-          <li><a href="#">Pending</a></li>
-        </ul>
+
       </li>
     </ul>
   </div>
+
 </div>

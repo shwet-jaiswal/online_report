@@ -21,7 +21,7 @@ function subMenuFilter () {
       if (element.hasClass('open')) {
         element.removeClass('open');
         element.find('ul').slideUp(200);
-      }  else {
+      } else {
         element.addClass('open');
         element.children('ul').slideDown(200);
       }
