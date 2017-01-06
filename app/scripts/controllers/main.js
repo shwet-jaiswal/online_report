@@ -8,5 +8,5 @@
  * Controller of the onlineReportApp
  */
 angular.module('onlineReportApp')
-  .controller('MainCtrl',['getReferenceDataService', function (getReferenceDataService) {
-  }]);
+  .controller('MainCtrl',function () {
+  });

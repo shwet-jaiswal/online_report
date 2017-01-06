@@ -5,6 +5,7 @@ getReferenceDataService.$inject = ['$http', '$q'];
 
 function getReferenceDataService($http, $q) {
   var initialData = undefined;
+
   var getReferenceData = function() {
 
     if (!initialData) {
@@ -26,8 +27,17 @@ function getReferenceDataService($http, $q) {
     return $q.when(initialData);
   };
 
+  var setReferenceData = function(newObj) {
+    initialData.push(newObj);
+  };
+
+  var getReferenceDataAfter = function(){
+    return initialData;
+  };
+
   return {
-    initialData: initialData,
+    getReferenceDataAfter: getReferenceDataAfter,
+    setReferenceData: setReferenceData,
     getReferenceData: getReferenceData
   }
 }

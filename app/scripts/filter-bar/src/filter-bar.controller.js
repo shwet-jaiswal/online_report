@@ -6,7 +6,7 @@ OnlrepFilterBarCtrl.$inject = ['getReferenceDataService', 'getUniqueFilterValue'
 
 function OnlrepFilterBarCtrl(getReferenceDataService, getUniqueFilterValue) {
   var vm = this;
-  vm.dataHeaderName = getReferenceDataService.initialData;
+  //vm.dataHeaderName = getReferenceDataService.initialData;
 
   function init() {
     getReferenceDataService.getReferenceData()
