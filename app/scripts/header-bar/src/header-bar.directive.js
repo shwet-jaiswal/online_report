@@ -7,8 +7,7 @@ function onlrepHeaderBar() {
     controller: 'OnlrepHeaderBarCtrl',
     controllerAs: 'onlrepHeaderBarCtrl',
     templateUrl: 'scripts/header-bar/src/header-bar.tpl.html',
-    restrict: 'E',
-    transclude: true
+    restrict: 'E'
   };
 
   return directive;

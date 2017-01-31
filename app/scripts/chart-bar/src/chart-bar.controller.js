@@ -2,19 +2,22 @@ angular
   .module('onlrep.chart-bar')
   .controller('OnlrepChartBarCtrl', OnlrepChartBarCtrl);
 
-OnlrepChartBarCtrl.$inject = ['getReferenceDataService', 'getUniqueFilterValue'];
+OnlrepChartBarCtrl.$inject = ['getReferenceDataService', 'getUniqueFilterValue', 'getChartSelectedService'];
 
-function OnlrepChartBarCtrl(getReferenceDataService, getUniqueFilterValue) {
+function OnlrepChartBarCtrl(getReferenceDataService, getUniqueFilterValue, getChartSelectedService) {
   var vm = this;
   vm.myDataSource = {};
 
   getReferenceDataService.getReferenceData()
       .then(
         function (initialData) {
-
           vm.dataHeaderName = getUniqueFilterValue.getUniqueFilterHeaderValue(initialData);
-          var dataToShown = vm.dataHeaderName[2]["headerListUniqueName"];
-          var captionText = vm.dataHeaderName[2]["headerName"];
+          var dataToShown = vm.dataHeaderName[getChartSelectedService.chartSelected[0]]["headerListUniqueName"];
+          var captionText = vm.dataHeaderName[getChartSelectedService.chartSelected[0]]["headerName"];
+
+          console.log(getChartSelectedService.chartSelected[0]);
+          console.log(getChartSelectedService.getChartSelected());
+
           var dataShw = {
             caption: captionText,
             startingangle: "300",

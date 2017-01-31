@@ -1,8 +1,19 @@
 <div id="onlrep-header">
-    <h1 class="heading-text">{{onlrepHeaderBarCtrl.clientTitle}} PROJECT REPORT</h1>
-    <div id="onlrep-header-selected-chart">
-      <div id="onlrep-header-selected-chart-value"></div>
-
-      <div id="onlrep-header-selected-downlaod"></div>
-    </div>
+  <div id="cssmenu">
+    <ul>
+      <li class="has-sub"><a href="#"><i class="fa fa-fw fa-bars"></i> Download As</a>
+        <ul>
+          <li><a href="#">Pdf</a></li>
+          <li><a href="#">Image</a></li>
+        </ul>
+      </li>
+      <li class="has-sub"><a href="#"><i class="fa fa-fw fa-bars"></i>Create Chart for</a>
+        <ul>
+          <li ng-repeat="header in onlrepFilterBarCtrl.dataHeaderName">
+            <a href="#" ng-click="onlrepHeaderBarCtrl.clickedValue($index)">{{header.headerName}}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 </div>
